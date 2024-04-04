@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: auto;
+            grid-gap: 20px;
+        }
+
+        .item {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .item img {
+            max-width: 100%;
+        }
+
+        .item h2 {
+            margin-top: 0;
+        }
+
+        .aside-content {
+            grid-column: 3;
+            grid-row: 2 / span 3;
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item">
+        <h2>Titulo de la Noticia 1</h2>
+        <img src="img/no1.jpg" alt="Imagen de la Noticia 1">
+        <p>Descripción de la Noticia 1...</p>
+    </div>
+    <div class="item">
+        <h2>Titulo de la Noticia 2</h2>
+        <img src="img/no2.jpg" alt="Imagen de la Noticia 2">
+        <p>Descripción de la Noticia 2...</p>
+    </div>
+    <div class="item">
+        <h2>Titulo de la Noticia 3</h2>
+        <img src="img/no3.jpg" alt="Imagen de la Noticia 3">
+        <p>Descripción de la Noticia 3...</p>
+    </div>
+    <div class="item">
+        <h2>Titulo de la Noticia 4</h2>
+        <img src="img/no4.jpg" alt="Imagen de la Noticia 4">
+        <p>Descripción de la Noticia 4...</p>
+    </div>
+    <aside class="aside-content">
+        <div class="item">
+            <h2>Titulo de la Noticia 5</h2>
+            <img src="img/no5.jpg" alt="Imagen de la Noticia 5">
+            <p>Descripción de la Noticia 5...</p>
+        </div>
+    </aside>
+</div>
+</body>
+</html>
